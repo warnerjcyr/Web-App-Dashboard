@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Project 9 - Web App Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+
+  <body>
+
+    <!-- TOPBAR -->
+
+    <div class="topbar">
+      <div class="container">
+        <div class="topbar_left">
+          <div class="nav-toggle mobile"><span></span></div>
+          <div class="topbar-title">
+            <a href="index.html"><h1>Your<span>App<span class="trade-mark">&trade;</span></span></h1></a>
+          </div> <!-- topbar-title -->
+        </div> <!-- topbar_left -->
+        <div class="topbar_right">
+          <div class="notification">
+            <span class="notification-icon"></span><span class="notification-signal active"></span>
+          </div> <!-- notification -->
+          <div class="user-profile">
+            <a href=""><span></span></a>
+            <p>Warner Cyr</p>
+          </div> <!-- user-profile -->
+        </div> <!-- topbar_right -->
+      </div> <!-- container -->
+    </div> <!-- topbar -->
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+      <div class="container">
+        <div class="sidebar-icon_container active"><a href=""><span class="icon-1 active"></span></a></div>
+        <div class="sidebar-icon_container"><a href=""><span class="icon-2"></span></a></div>
+        <div class="sidebar-icon_container"><a href=""><span class="icon-3"></span></a></div>
+        <div class="sidebar-icon_container"><a href=""><span class="icon-4"></span></a></div>
+      </div> <!-- container -->
+    </aside> <!-- sidebar -->
+
+    <!-- DASHBOARD -->
+      
+    <!-- Dashboard Topbar -->
+
+    <main class="dashboard">
+      <section class="dashboard-topbar">
+        <div class="dashboard-topbar-left">
+          <div class="dashboard-topbar-title">
+            <h2>Dashboard</h2>
+          </div> <!-- dashboard-topbar-title -->
+        </div> <!-- dashboard-topbar-left -->
+        <div class="dashboard-topbar-right">
+          <label for="search"><img src="images/icons/search.svg" alt="search" width="15" height="15"></label>
+          <input type="text" name="search" id="search" placeholder="Search">
+        </div> <!-- dashboard-topbar-right -->
+      </section> <!-- dashboard-topbar -->
+        
+      <!-- Dashboard Alertbar -->
+        
+      <section class="dashboard-alertbar">
+        <div class="dashboard-alertbar-inner">
+          <h3>Alert</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, consectetur adipisicing elit.</p>
+          <span></span>
+        </div> <!-- dashboard-alertbar-inner -->
+      </section> <!-- dashboard-alertbar -->
+        
+      <!-- Dashboard Traffic -->
+
+      <section class="dashboard-traffic">
+        <div class="dashboard-traffic-navbar">
+          <div class="dashboard-traffic-navbar-left">
+            <h3>Traffic</h3>
+          </div> <!-- dashboard-traffic-navbar-left -->
+          <div class="dashboard-traffic-navbar-right">
+            <ul>
+              <li><a id="hourly" href="">Hourly</a></li>
+              <li class="active"><a id="daily" class="active" href="">Daily</a></li>
+              <li><a id="weekly" href="">Weekly</a></li>
+              <li><a id="monthly" href="">Monthly</a></li>
+            </ul> <!-- ul -->
+          </div> <!-- dashboard-traffic-navbar-right -->
+        </div> <!-- dashboard-traffic-navbar -->
+        <div class="dashboard-traffic-linechart">
+          <canvas id="trafficChart" width="280" height="200"></canvas>
+        </div> <!-- dashboard-traffic-linechart -->
+      </section> <!-- dashboard-traffic -->
+        
+      <!-- Dashboard Information -->
+
+      <section class="dashboard-information">
+        <div class="dashboard-info-left">
+          <div class="dashboard-info-title">
+            <h2>Daily Traffic</h2>
+          </div> <!-- dashboard-info-title -->
+          <div class="dashboard-info-barchart">
+            <canvas id="dailyTraffic" width="280" height="200"></canvas>
+          </div> <!-- dashboard-info-barchart -->
+        </div> <!-- dashboard-info-left -->
+        <div class="dashboard-info-right">
+          <div class="dashboard-info-title">
+            <h2>Mobile Users</h2>
+          </div> <!-- dashboard-info-title -->
+          <div class="dashboard-info-doughnutchart">
+            <canvas id="mobileUsers" width="280" height="200"></canvas>
+            <div class="dashboard-info-labels">
+              <div class="dashboard-info-labels-phone">
+                <span></span><p>Phone</p>
+              </div> <!-- dashboard-info-labels-phone -->
+              <div class="dashboard-info-labels-tablets">
+                <span></span><p>Tablets</p>
+              </div> <!-- dashboard-info-labels-tablets -->
+              <div class="dashboard-info-labels-desktop">
+                <span></span><p>Desktop</p>
+              </div> <!-- dashboard-info-labels-desktop -->
+            </div> <!-- dashboard-info-labels -->
+          </div> <!-- dashboard-info-doughnutchart -->
+        </div> <!-- dashboard-info-right -->
+      </section> <!-- dashboard-information -->
+        
+      <!-- Dashboard Social -->
+
+      <section class="dashboard-social">
+        <div class="dashboard-social-title">
+          <h2>Social Stats</h2>
+        </div> <!-- dashboard-social-title -->
+        <div class="dashboard-social-boxes">
+          <div class="dashboard-social-box-one">
+            <div class="dashboard-social-icon">
+              <span></span>
+            </div> <!-- dashboard-social-icon -->
+            <div class="dashboard-social-box-content">
+              <h3>Twitter</h3>
+              <p>10,345</p>
+            </div> <!-- dashboard-social-box-content -->
+          </div> <!-- dashboard-social-box-one -->
+          <div class="dashboard-social-box-two">
+            <div class="dashboard-social-icon">
+              <span></span>
+            </div> <!--dashboard-social-icon -->
+            <div class="dashboard-social-box-content">
+              <h3>Facebook</h3>
+              <p>8,739</p>
+            </div> <!-- dashboard-social-box-content -->
+          </div> <!-- dashboard-social-box-two -->
+          <div class="dashboard-social-box-three">
+            <div class="dashboard-social-icon">
+              <span></span>
+            </div> <!-- dashboard-social-icon -->
+            <div class="dashboard-social-box-content">
+              <h3>Google+</h3>
+              <p>2,530</p>
+            </div> <!-- dashboard-social-box-content -->
+          </div> <!-- dashboard-social-box-three -->
+        </div> <!-- dashboard-social-boxes -->
+      </section> <!-- dashboard-social -->
+        
+      <!-- Dashboard Members -->
+
+      <section class="dashboard-members">
+        <div class="dashboard-members-left">
+          <div class="dashboard-members-title">
+            <h2>New Members</h2>
+          </div> <!-- dashboard-members-title -->
+          <div class="dashboard-new_members-container">
+            <div class="dashboard-new_members-row">
+              <div class="dashboard-new_members-face">
+                <img src="images/faces/victoria.jpg" alt="Victoria Chambers">
+                <div class="dashboard-new_members-info">
+                  <h3>Victoria Chambers</h3>
+                  <a href=""><p>vici.chamb80@example.com</p></a>
+                </div> <!-- dashboard-new_members-info -->
+              </div> <!-- dashboard-new_members-face -->
+              <div class="dashboard-new_members-date">
+                <p>10/15/15</p>
+              </div> <!-- dashboard-new_members-date -->
+            </div> <!-- dashboard-new_members-row -->
+            <div class="dashboard-new_members-row">
+              <div class="dashboard-new_members-face">
+                <img src="images/faces/dale.jpg" alt="Dale Byrd">
+                <div class="dashboard-new_members-info">
+                  <h3>Dale Byrd</h3>
+                  <a href=""><p>dale.byrd52@example.com</p></a>
+                </div> <!-- dashboard-new_members-info -->
+              </div> <!-- dashboard-new_members-face -->
+              <div class="dashboard-new_members-date">
+                <p>10/15/15</p>
+              </div> <!-- dashboard-new_members-date -->
+            </div> <!-- dashboard-new_members-row -->
+            <div class="dashboard-new_members-row">
+              <div class="dashboard-new_members-face">
+                <img src="images/faces/dawn.jpg" alt="Dawn Wood">
+                <div class="dashboard-new_members-info">
+                  <h3>Dawn Wood</h3>
+                  <a href=""><p>dawn.wood16@example.com</p></a>
+                </div> <!-- dashboard-new_members-info -->
+              </div> <!-- dashboard-new_members-face -->
+              <div class="dashboard-new_members-date">
+                <p>10/15/15</p>
+              </div> <!-- dashboard-new_members-date -->
+            </div> <!-- dashboard-new_members-row -->
+            <div class="dashboard-new_members-row">
+              <div class="dashboard-new_members-face">
+                <img src="images/faces/dan.jpg" alt="Dan Oliver">
+                <div class="dashboard-new_members-info">
+                  <h3>Dan Oliver</h3>
+                  <a href=""><p>dan.oliver82@example.com</p></a>
+                </div> <!-- dashboard-new_members-info -->
+              </div> <!-- dashboard-new_members-face -->
+              <div class="dashboard-new_members-date">
+                <p>10/15/15</p>
+              </div> <!-- dashboard-new_members-date -->
+            </div> <!-- dashboard-new_members-row -->
+          </div> <!-- dashboard-new_members-container -->
+        </div> <!-- dashboard-members-left -->
+        <div class="dashboard-members-right">
+          <div class="dashboard-members-title">
+            <h2>Recent Activity</h2>
+          </div> <!-- dashboard-members-title -->
+          <div class="dashboard-recent_activity-container">
+            <div class="dashboard-recent_activity-row">
+              <div class="dashboard-recent_activity-face">
+                <img src="images/faces/victoria.jpg" alt="Victoria Chambers">
+                <div class="dashboard-recent_activity-info">
+                  <h3>Victoria Chambers commented on YourApp's SEO Tips</h3>
+                  <p>4 hours ago</p>
+                </div> <!-- dashboard-recent_activity-info -->
+              </div> <!-- dashboard-recent_activity-face -->
+              <div class="dashboard-recent_activity-icon">
+                <a href=""><img src="images/icons/arrow-right.svg" alt="Arrow Right" width="15" height="15"></a>
+              </div> <!-- dashboard-recent_activity-icon -->
+            </div> <!-- dashboard-recent_activity-row -->
+            <div class="dashboard-recent_activity-row">
+              <div class="dashboard-recent_activity-face">
+                <img src="images/faces/dale.jpg" alt="Dale Bryd">
+                <div class="dashboard-recent_activity-info">
+                  <h3>Dale Brid likes the Facebook Changes for 2016</h3>
+                  <p>5 hours ago</p>
+                </div> <!-- dashboard-recent_activity-info -->
+              </div> <!-- dashboard-recent_activity-face -->
+              <div class="dashboard-recent_activity-icon">
+                <a href=""><img src="images/icons/arrow-right.svg" alt="Arrow Right" width="15" height="15"></a>
+              </div> <!-- dashboard-recent_activity-icon -->
+            </div> <!-- dashboard-recent_activity-row -->
+            <div class="dashboard-recent_activity-row">
+              <div class="dashboard-recent_activity-face">
+                <img src="images/faces/dawn.jpg" alt="Dawn Wood">
+                <div class="dashboard-recent_activity-info">
+                  <h3>Dawn Wood commented on your Facebook's Changes for 2016</h3>
+                  <p>5 hours ago</p>
+                </div> <!-- dashboard-recent_activity-info -->
+              </div> <!-- dashboard-recent_activity-face -->
+              <div class="dashboard-recent_activity-icon">
+                <a href=""><img src="images/icons/arrow-right.svg" alt="Arrow Right" width="15" height="15"></a>
+              </div> <!-- dashboard-recent_activity-icon -->
+            </div> <!-- dashboard-recent_activity-row -->
+            <div class="dashboard-recent_activity-row">
+              <div class="dashboard-recent_activity-face">
+                <img src="images/faces/dan.jpg" alt="Dan Oliver">
+                <div class="dashboard-recent_activity-info">
+                  <h3>Dan Oliver posted YourApps's SEO Tips</h3>
+                  <p>1 day ago</p>
+                </div> <!-- dashboard-recent_activity-info -->
+              </div> <!-- dashboard-recent_activity-face -->
+              <div class="dashboard-recent_activity-icon">
+                <a href=""><img src="images/icons/arrow-right.svg" alt="Arrow Right" width="15" height="15"></a>
+              </div> <!-- dashboard-recent_activity-icon -->
+            </div> <!-- dashboard-recent_activity-row -->
+          </div> <!-- dashboard-recent_activity-container -->
+        </div> <!-- dashboard-members-rightside -->
+      </section> <!-- dashboard-members -->
+        
+      <!-- Dashboard Settings -->
+
+      <section class="dashboard-settings">
+        <div class="dashboard-settings-left">
+          <div class="dashboard-settings-title">
+            <h2>Message User</h2>
+          </div> <!-- dashboard-settings-title -->
+          <form class="dashboard-settings-container" method="post" action="#">
+            <input type="text" id="user-search" name="user_search" placeholder="Search for User">
+            <textarea id="user-message" name="user_message" placeholder="Message for Users"></textarea>
+            <button type="submit" name="send_message_to_users" id="send-message">
+                <span>Send</span></button>
+          </form> <!-- dashboard-settings-container -->
+        </div> <!-- dashboard-settings-left -->
+        <div class="dashboard-settings-right">
+          <div class="dashboard-settings-title">
+            <h2>Settings</h2>
+          </div> <!-- dashboard-settings-title -->
+          <div class="dashboard-settings-right-container">
+            <div class="dashboard-settings-right-row">
+              <div class="dashboard-settings-right-text">
+                <p>Send Email Notification</p>
+              </div> <!-- dashboard-settings-right-text -->
+                
+                
+             <div class="dashboard-settings-right-icon first">
+                <p>on</p>
+                <p>off</p>
+                <div class="dashboard-settings-right-icon-button first"></div>
+              </div> <!-- dashboard-settings-right-icon first -->
+            </div> <!-- dashboard-settings-right-row -->
+            <div class="dashboard-settings-right-row">
+              <div class="dashboard-settings-right-text">
+                <p>Set Profile Public</p>
+              </div> <!-- dashboard-settings-right-text -->
+              <div class="dashboard-settings-right-icon last">
+                <p>on</p>
+                <p>off</p>
+                <div class="dashboard-settings-right-icon-button last"></div> 
+              </div> <!-- dashboard-settings-right-icon last -->
+                
+                
+            </div> <!-- dashboard-settings-right-row -->
+            <form action="#">
+              <select class="" name="select_timezone" id="select_timezone">
+                <option value="" disabled selected hidden>Select Timezone</option>
+                <option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
+                <option value="-11.0">(GMT -11:00) Midway Island, Samoa</option>
+                <option value="-10.0">(GMT -10:00) Hawaii</option>
+                <option value="-9.0">(GMT -9:00) Alaska</option>
+                <option value="-8.0">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                <option value="-7.0">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                <option value="-6.0">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                <option value="-5.0">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                <option value="-4.0">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                <option value="-3.5">(GMT -3:30) Newfoundland</option>
+                <option value="-3.0">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                <option value="-2.0">(GMT -2:00) Mid-Atlantic</option>
+                <option value="-1.0">(GMT -1:00 hour) Azores, Cape Verde Islands</option>
+                <option value="0.0">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+                <option value="1.0">(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+                <option value="2.0">(GMT +2:00) Kaliningrad, South Africa</option>
+                <option value="3.0">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                <option value="3.5">(GMT +3:30) Tehran</option>
+                <option value="4.0">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                <option value="4.5">(GMT +4:30) Kabul</option>
+                <option value="5.0">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                <option value="5.5">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                <option value="5.75">(GMT +5:45) Kathmandu</option>
+                <option value="6.0">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                <option value="7.0">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                <option value="8.0">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                <option value="9.0">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                <option value="9.5">(GMT +9:30) Adelaide, Darwin</option>
+                <option value="10.0">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                <option value="11.0">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                <option value="12.0">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+              </select>
+              </form>
+            <div class="dashboard-settings-right-buttons">
+              <input type="submit" name="submit" value="Save">
+              <input type="submit" name="submit" value="Cancel">
+            </div> <!-- dashboard-settings-right-buttons -->
+          </div> <!-- dashboard-settings-right-container -->
+        </div> <!-- dashboard-settings-right -->
+      </section> <!-- dashboard-settings -->
+    </main> <!-- dashboard -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
+    <script src="js/functions.js"></script>
+
+  </body>
+</html>
